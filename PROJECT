@@ -1,0 +1,16 @@
+domain: ll.io
+layout:
+- go.kubebuilder.io/v3
+projectName: builder-demo
+repo: github.com/Sion-L/builder-demo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: ll.io
+  group: webapp
+  kind: Book
+  path: github.com/Sion-L/builder-demo/api/v1
+  version: v1
+version: "3"
